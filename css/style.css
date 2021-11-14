@@ -1,0 +1,901 @@
+/* inter-100 - latin_cyrillic */
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 100;
+    src: url('../fonts/inter-v3-latin_cyrillic-100.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/inter-v3-latin_cyrillic-100.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/inter-v3-latin_cyrillic-100.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/inter-v3-latin_cyrillic-100.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/inter-v3-latin_cyrillic-100.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/inter-v3-latin_cyrillic-100.svg#Inter') format('svg'); /* Legacy iOS */
+  }
+
+  /* inter-300 - latin_cyrillic */
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/inter-v3-latin_cyrillic-300.eot'), /* IE9 Compat Modes */
+         url('../fonts/inter-v3-latin_cyrillic-300.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/inter-v3-latin_cyrillic-300.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/inter-v3-latin_cyrillic-300.ttf') format('truetype'); /* Safari, Android, iOS*/
+  }    
+         
+  /* inter-regular - latin_cyrillic */
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/inter-v3-latin_cyrillic-regular.eot'), /* IE9 Compat Modes */
+         url('../fonts/inter-v3-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/inter-v3-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/inter-v3-latin_cyrillic-regular.ttf') format('truetype'); /* Safari, Android, iOS */
+        
+  }
+
+  /* inter-600 - latin_cyrillic */
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/inter-v3-latin_cyrillic-600.eot'), /* IE9 Compat Modes */  
+         url('../fonts/inter-v3-latin_cyrillic-600.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/inter-v3-latin_cyrillic-600.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/inter-v3-latin_cyrillic-600.ttf') format('truetype'); /* Safari, Android, iOS */
+         
+  }
+
+  /* inter-700 - latin_cyrillic */
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/inter-v3-latin_cyrillic-700.eot'), /* IE9 Compat Modes */   
+         url('../fonts/inter-v3-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/inter-v3-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/inter-v3-latin_cyrillic-700.ttf') format('truetype'); /* Safari, Android, iOS */
+        
+  }
+
+  /* roboto-300 - latin_cyrillic */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/roboto-v29-latin_cyrillic-300.eot'), /* IE9 Compat Modes */  
+         url('../fonts/roboto-v29-latin_cyrillic-300.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/roboto-v29-latin_cyrillic-300.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/roboto-v29-latin_cyrillic-300.ttf') format('truetype'); /* Safari, Android, iOS */
+        
+  }
+
+  /* roboto-regular - latin_cyrillic */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v29-latin_cyrillic-regular.eot'), /* IE9 Compat Modes */  
+         url('../fonts/roboto-v29-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/roboto-v29-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/roboto-v29-latin_cyrillic-regular.ttf') format('truetype'); /* Safari, Android, iOS */
+  }     
+
+  /* Bebas Neue  - latin_cyrillic */
+  @font-face {
+    font-family: 'Bebas Neue';
+    font-style: bold;
+    font-weight: 700;
+    src: url('../fonts/bebas-neue-bold.eot'), /* IE9 Compat Modes */  
+         url('../fonts/bebas-neue-bold.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/bebas-neue-bold.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/bebas-neue-bold.ttf') format('truetype'); /* Safari, Android, iOS */
+  }    
+  
+  * {
+    box-sizing: border-box;
+  }
+
+  :root {
+      --color-white: #FFFFFF;
+      --color-black:  #303036;
+      --color-dark-grey: #414141;
+      --color-middle-grey: #7B7C81;
+      --color-grey: #B5B6BA;
+      --color-light-grey: #9FA5C0;
+      --color-orange: #F9983E;
+
+      --font-size-48: 48px;
+      --font-size-40: 40px;
+      --font-size-20: 20px;
+      --font-size-16: 16px;
+      --font-size-13: 13px;
+      --font-size-12: 12px;
+     
+  };
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+      background-color: var(--color-white); 
+      overflow:  hidden;     
+  }
+
+  body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  button {
+    border: none;
+  }
+
+  .container {         
+     width: 100%;
+     height: 100%;     
+  }
+
+  .header__container {      
+      height: 93px;          
+      width: 100%;
+      background-color: var(--color-dark-grey);
+  }
+
+  .product__card__container {        
+      max-width: 1420px;
+      height: 596px;
+      margin: 0 auto;
+      padding: 0 50px;
+      overflow: hidden;
+  }
+
+  .product__card__breadcrumbs {   
+    margin-right: 0;
+    margin-left: auto;
+    height: 20px;
+    transform: translateY(20px);
+  }
+
+  .product__card__content__container {
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .product__card__back__active {
+    display: none;
+  }
+
+  .product__card__header {
+    display: none;
+
+  }
+
+  .product__card__image__gallary__item img {
+    width: 90%;
+  }
+ 
+ .product__card__image {  
+    flex: 0 0 50%;
+    display: flex;
+    justify-content: space-around;
+ }
+
+ .product__card__image__gallary {
+   position: relative;
+ }
+
+ .product__card__image__gallary__slider {   
+   flex: 0 0 50%; 
+   height: 100%;  
+   max-width: 500px;
+   margin-top: 50px;
+   margin-right: 20px;
+  }
+  
+  .product__card__image__gallary__slider.slick-list {    
+    overflow: hidden;
+  }
+ 
+
+ .product__card__image__slider__list {
+  height: 100%;  
+   max-width: 105px;
+ }
+
+ .product__card__image__slider {
+   flex: 0 0 15%;    
+   width: 105px;
+ 
+ }
+
+ .product__card__image__slider__list .slick-slider {  
+  max-width: 105px;
+  max-height: 600px;
+ }
+
+ .product__card__image__slider__list .slick-slide {
+  max-height: 105px; 
+  filter: opacity(60%);
+ }
+
+ .product__card__image__slider__list .slick-slide img {
+   margin-top: 15px;    
+ }
+
+ .product__card__image__slider__list .slick-slide.slick-current {
+    filter: opacity(100%);
+ }
+ 
+
+ .product__card__image__slider__list .slick-list {
+   overflow: hidden;
+   width: 105px;
+   height: 600px;
+ }
+
+ .arrow {
+   margin-left: 15px;
+   background-color: var(--color-white);
+   padding: 21px;
+   border: 1px solid #F2F2F2;
+   border-radius: 50%;
+   transition: border .3s ease;
+ }
+
+ .arrow:hover{
+  border: 1px solid var(--color-grey);
+ }
+
+
+ .product__card__image__gallary__slider .slick-slider {  
+  height: 500px;
+   width: 500px;
+   
+ }
+
+ .product__card__image__gallary__slider .slick-list {
+  overflow: hidden;  
+ height: 100%;
+  width: 500px;
+padding: 0;
+}
+
+.product__card__image__gallary__slider .slick-track {
+  display: flex; 
+}
+
+ .product__card__image__gallary__slider .slick-slide {  
+  margin: 0 20px;
+  text-align: center;
+  opacity: 1;
+  height: 500px;
+  width: 500px;
+ }
+
+ .product__card__image__gallary__slider .slick-slide img{
+  width: 100%;    
+ }
+
+
+ .product__card__content {
+    flex: 0 0 70%;    
+ }
+
+ .product__card__breadcrumbs {
+    max-width: 710px;
+ }
+
+ .product__card__breadcrumbs__list {
+     display: flex;
+     overflow: hidden;
+     justify-content: space-between;
+     max-width: 664px;
+     margin: 7px 10px 38px 0px; 
+     padding-right: 50px;
+ }
+
+ .product__card__content__breadcrumbs__item { 
+   margin: auto;
+ }
+
+ 
+ .product__card__breadcrumbs__link,
+ .product__card__breadcrumbs__delimiter {     
+     font-family: 'Inter';
+     font-size: var(--font-size-12);
+     font-weight: normal;
+     color: var(--color-grey);
+     line-height: 18px;     
+ }
+
+ .product__card__breadcrumbs__link {
+  transition: color .3s ease;
+ }
+ 
+
+ .product__card__breadcrumbs__link:hover {
+  color: var(--color-dark-grey);
+ }
+
+ .product__card__breadcrumbs__link:hover .product__card__breadcrumbs__link-border {
+  color: var(--color-dark-grey);
+ }
+ 
+
+ .product__card__breadcrumbs__link-border {     
+     border-bottom: 1px solid var(--color-grey);
+     transition: color .3s ease;
+ }
+
+ .product__card__breadcrumbs__link-active {
+     font-weight: 600;  
+ }
+
+ .product__card__breadcrumbs__back {
+   display: none;
+   text-align: right;
+   margin-right: 20px;
+ }
+
+ .product__card__breadcrumbs__back__arrow {
+   transform: rotate(180deg) translateY(-1px);
+   width: 10px;
+ }
+
+ .product__card__breadcrumbs__back__arrow path {
+   fill: var(--color-grey);
+   transition: fill .3s ease;
+ }
+
+ .product__card__breadcrumbs__back:hover .product__card__breadcrumbs__back__arrow path {
+   fill: var(--color-middle-grey);
+ }
+
+ .description__header {
+  max-width: 700px;
+  margin-bottom: 24px;
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-size: 35px;
+  font-weight: 700;
+  color: var(--color-black);
+ }
+  
+
+ .product__card__content__description__availability-and-article {
+     display: flex;
+     margin-bottom: 29px;
+ }
+
+ .product__card__content__description__availability-and-article__availability,
+ .product__card__content__description__availability-and-article__article {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 18px;
+    color: var(--color-middle-grey);
+ }
+
+ .product__card__content__description__availability-and-article__availability {
+     margin-right: 20px;
+ }
+
+ .product__card__content__description__availability-and-article__availability::before {
+     content: url(/img/Vector\ 7.svg);
+     padding-right: 5px;    
+ }
+
+ .product__card__content__description__text {
+     max-width: 632px;
+     min-height: 107px;
+     font-family: 'Inter';
+     font-style: normal;
+     font-weight: 400;
+     font-size: 16px;
+     line-height: 27px;
+ }
+
+ .product__card__content__description__detailed {
+   margin-bottom: 40px;
+ }
+
+ .product__card__content__description__detailed__link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    border-bottom: 1px dashed #303036;
+    transition-property: color, border;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+ }
+
+ .product__card__content__description__detailed__link__arrow path {
+   transition: fill .3s ease ;
+ }
+
+ .product__card__content__description__detailed__link:hover {
+   color: var(--color-grey);
+   border-bottom: 1px dashed var(--color-grey);
+ }
+
+ .product__card__content__description__detailed__link:hover + .product__card__content__description__detailed__link__arrow path {
+  fill: var(--color-grey);
+ }
+
+ .product__card__content__buy {
+    max-width: 700px;
+    min-height: 150px;
+    border: 1px solid #F2F2F2;
+    border-radius: 20px;
+ }
+
+ .product__card__content__buy {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ }
+
+ .product__card__content__buy__price-new {
+    margin-bottom: 4px;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 28px;
+    color: var(--color-black);
+ }
+
+ .product__card__content__buy__price-old {
+   position: relative;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    color: var(--color-grey);
+    
+ }
+
+ .product__card__content__buy__price-old-border::after {   
+    content: '';
+    width: 50%;
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+    border-width: 0 0 1px;
+    border-style: solid;
+    border-color: #D34E4E;      
+ }
+
+ .product__card__content__buy__button__btn {   
+    padding: 22px 110px;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 22px;
+    color: var(--color-white);
+    background: var(--color-orange);  
+    border-radius: 10px;  
+    transition: background-color .3s ease;
+ }
+
+ .product__card__content__buy__button__btn__basket {
+  margin-right: 10px; 
+ }
+  
+ .product__card__content__buy__button__btn:hover {
+   background-color: var(--color-grey);   
+ }
+
+  .footer__container {
+    height: 93px;
+    width: 100%;
+    background-color: var(--color-dark-grey);
+  }
+
+  @media(max-width: 1600px) {
+    .header__container, 
+    .footer__container {      
+      max-height: 63px;  
+    }
+
+    .description__header  {      
+      font-size: 30px;
+      max-width: 600px;
+    }
+  }
+
+  @media(max-width: 1440px) {
+
+    .header__container, 
+    .footer__container {      
+     height: 40px;  
+    }
+
+    .product__card__container {
+      max-width: 1200px;
+    }
+
+    .product__card__breadcrumbs__list {
+      padding-right: 0;
+    }
+
+    .product__card__breadcrumbs {     
+     max-width: 580px;  
+    } 
+
+    .description__header  {
+      max-width: 500px;      
+    }
+
+    .product__card__content__description__text {
+      max-width: 532px;
+      font-size: 13px;
+      line-height: 18px;
+    }
+
+    .product__card__description__detailed__link {
+      font-size: 13px;     
+    }
+
+    .product__card__description__detailed__link__arrow {
+      width: 10px;
+      transform: translateY(2px);
+    }
+
+    .product__card__content__buy {
+      max-width: 500px;
+    }
+
+    .product__card__content__buy__button__btn {
+      padding: 22px 50px;
+    }
+
+    .product__card__content__buy__price-new {
+      font-size: 30px;
+    }
+    .product__card__content__buy__price-old {
+      font-size: 15px;
+    }   
+    
+    .product__card__content__buy__button__btn-text {
+      font-size: 20px;
+    }
+
+    .product__card__content__buy__button__btn__basket {
+      width: 17px;
+      transform: translateY(3px);
+    }
+  }
+
+  @media(max-width: 1200px) {
+
+    .header__container, 
+    .footer__container {      
+      max-height: 63px;  
+    }
+
+    .product__card__container {
+      max-width: 992px;
+      height: 496px;
+    }
+
+    .product__card__image__slider {
+      display: none;
+    }
+
+
+    .product__card__image__gallary__slider {     
+      flex: 0 0 80%;
+      max-width: 470px;
+    } 
+       
+    
+    .product__card__image__gallary__arrows .arrow-prevarrow, 
+    .product__card__image__gallary__arrows .arrow-nextarrow {
+      position: absolute;
+      top: 370px;
+      padding: 21px;
+      background: var(--color-white);
+      border: 1px solid #F2F2F2;
+      border-radius: 50%;
+      transform: rotate(-90deg);
+      z-index: 1;      
+      transition: border .3s ease;
+   } 
+
+   .product__card__image__gallary__arrows:hover .arrow-prevarrow,
+   .product__card__image__gallary__arrows:hover .arrow-nextarrow {
+    border: 1px solid var(--color-grey);
+   }
+  
+   .product__card__image__gallary__arrows .arrow-prevarrow {    
+     left: 50px; 
+  } 
+
+  .product__card__image__gallary__arrows .arrow-nextarrow {   
+    right: 50px;      
+  } 
+
+    .product__card__breadcrumbs {
+      max-width: 500px;
+      margin-bottom: 20px;
+    }
+
+    .product__card__back {
+      display: block;  
+      max-width: 470px;   
+    }
+  
+   
+    .description__header  {
+      max-width: 496px;
+      font-size: 18px;
+    }
+
+    .product__card__content__description__text {
+      max-width: 470px;
+      font-size: 13px;
+      line-height: 18px;
+    }
+
+    .product__card__content__description__detailed__link {
+      font-size: 13px;     
+    }
+
+    .product__card__content__buy {
+      max-width: 470px;
+    }
+
+    .product__card__content__buy__button__btn {
+      padding: 22px 50px;
+    }
+
+    .product__card__content__buy__price-new {
+      font-size: 30px;
+    }
+    .product__card__content__buy__price-old {
+      font-size: 15px;
+    }        
+ 
+    
+  }
+
+  @media(max-width: 992px) {
+    html {
+      overflow: visible;     
+  }
+
+  .header__container, 
+  .footer__container {      
+    height: 53px;     
+  }
+
+  .product__card__container {    
+    min-height: 596px;
+    max-width: 768px;
+    height: 100%;
+    margin: 30px auto;
+  }
+
+  .product__card__content__container {
+    flex-direction: column;
+  }
+
+  .product__card__breadcrumbs {
+   margin: 0 auto 60px 0;
+   transform: translateY(0)
+  }
+
+  .product__card__breadcrumbs__list {
+    margin-top: 0;
+    
+   }
+  
+  .product__card__header {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+ .product__card__image__gallary__arrows .arrow-prevarrow,
+ .product__card__image__gallary__arrows .arrow-nextarrow{
+    top: 150px;    
+  } 
+
+  .product__card__image__gallary__arrows .arrow-prevarrow {     
+    left: -70px;      
+  } 
+
+  .product__card__image__gallary__arrows .arrow-nextarrow {     
+    right: -100px;      
+  } 
+
+  .product__card__image__gallary__slider {
+    margin-top: 0;
+    margin-right: 0;
+    max-height: 400px;
+  }
+  .product__card__back {
+    display: none;
+  }
+
+  .product__card__content__description {
+    margin: auto;    
+  }
+
+  .product__card__content__description__text {
+     max-width: 900px;
+  }
+
+  .product__card__content__buy {
+    max-width: 900px;    
+  }
+
+}
+
+@media(max-width: 768px) {
+  .product__card__breadcrumbs {
+    display: none;
+  }
+
+  .product__card__image__gallary__slider .slick-dots {
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    left: 200px;
+  }
+  
+  .slick-dots li {
+    width: 10px;
+    height: 10px;
+    background-color: var(--color-grey);
+    border-radius: 50%;
+  }
+
+  .slick-dots .slick-active { 
+  background-color: var(--color-middle-grey);
+  }
+
+ .product__card__image__gallary__arrows .arrow-prevarrow,
+ .product__card__image__gallary__arrows .arrow-nextarrow {
+  top: 360px;  
+ } 
+
+ .product__card__image__gallary__arrows .arrow-prevarrow {    
+  left: 50px;      
+ } 
+
+ .product__card__image__gallary__arrows .arrow-nextarrow  {     
+  right: 50px;      
+ } 
+
+}
+
+@media(max-width: 568px) {
+
+  .product__card__container {   
+    margin: 20px 30px;
+  }
+
+  .product__card__image__gallary {
+    width: 400px;
+  }
+
+  .product__card__image__gallary__slider .slick-list {
+    width: 400px;
+    width: 90%;    
+  }
+
+  .product__card__image__gallary__slider .slick-slide {
+   width: 400px;
+    height: 250px;
+  }
+
+  .product__card__image__gallary__slider .slick-dots {
+    left: 160px;
+    top: 250px;
+  }
+
+  .product__card__image__gallary__arrows .arrow-nextarrow,
+  .product__card__image__gallary__arrows .arrow-prevarrow {
+     top: 235px;
+     padding: 10px;
+    } 
+   
+    .product__card__image__gallary__arrows .arrow-prevarrow {    
+     left: 80px;      
+   } 
+   
+   .product__card__image__gallary__arrows .arrow-nextarrow {     
+     right: 80px;      
+   } 
+
+  .product__card__content__buy {
+    flex-direction: column;
+  }
+
+  .product__card__content__price {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+  .product__card__content__buy__price-new, 
+  .product__card__content__buy__price-old {
+    margin: auto 10px;
+  }
+  
+}
+
+@media(max-width: 414px) {
+
+  .product__card__image__gallary {
+    width: 250px;
+    height: auto;
+  }
+
+  .product__card__image__gallary__slider .slick-dots {
+    left: 80px;
+    top: 130px;
+  }
+  .product__card__image__gallary__slider .slick-slide {
+     width: 250px ;
+     height: auto;
+   }
+
+   .product__card__image__gallary__slider .slick-slide img {
+     width: 100%;
+     height: auto;
+   }
+
+   .product__card__content__buy__button__btn {
+     padding: 22px;
+   }
+
+   .product__card__image__gallary__arrows {
+     display: none;
+    }   
+    
+    .description__header {
+      font-size: 15px;
+    }
+
+    .product__card__content__buy__price-new {
+      font-size: 20px;
+    }
+
+    .product__card__content__buy__button__btn-text {
+      font-size: 15px;
+    }
+
+    .product__card__content__buy__button__btn {
+      padding: 10px;
+    }    
+  
+  }
